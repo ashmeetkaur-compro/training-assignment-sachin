@@ -391,7 +391,7 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
   border-bottom-color: rgb(105, 106, 135);
   border-bottom-style: dashed;
   border-bottom-width: 1px;
-  color: rgb(105, 106, 135);
+  color:  #fd387c;
   display: flex;
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -415,7 +415,6 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  height: 265px;
   line-height: 30px;
   overflow-wrap: break-word;
   padding-bottom: 40px;
@@ -435,7 +434,6 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  height: 56px;
   hyphens: manual;
   line-height: 30px;
   overflow-wrap: break-word;
@@ -500,13 +498,11 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
   display: center;
   font-family: Staatliches, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 23px;
-  height: 30.2px;
   line-height: 27.6px;
   margin-top: 0px;
   max-width: 100%;
   overflow-wrap: break-word;
   padding-top: 3px;
-  width: 520px;
 }
 
 .day_events:hover{
@@ -523,6 +519,10 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
   padding-top: 0px;
   display: flex;
   align-items: center;
+}
+
+.speakers{
+  display: inline;
 }
 
 .speaker_link{
@@ -550,7 +550,6 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: white;
   overflow: hidden;
 }
 
@@ -571,5 +570,20 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
 .fa{
   color:#fd387c;
 }
+.speaker-details{
+  display:flex;
+}
+span{
+  width:12%;
+}
+.small_speaker_images{
+  padding-top: 10px;
 
+}
+.location_schedules{
+  display: flex;
+}
+.time_schedules{
+  display: flex;
+}
 
