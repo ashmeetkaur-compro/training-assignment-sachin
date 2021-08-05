@@ -9,56 +9,60 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href=".\css/index.css">
+  <link rel="stylesheet" href=".\css\index.css">
 </HEAD>
 
 <body>
-  <section class=first>
-    <div class="navbar">
-      <div class="dropdown" style="float:justify;">
-        <button class="dropbtn">Home
-          <i class="fa fa-angle-down" style="color: inherit;"></i>
-        </button>
-        <div class="dropdown-content">
-          <a class="dropdown-item" href="#">Home 1</a>
-          <a class="dropdown-item" href="#">Home 2</a>
-          <a class="dropdown-item" href="#">Home 3</a>
-        </div>
+  <section class=wrapper>
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="navIcon fa fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#"></a></div>
+        <ul class="links">
+          <li><a href="#" class=desktop-link>Home <i class="navIcon fa fa-angle-down"></i></a>
+            <input type="checkbox" id="show-home">
+            <label for="show-home">Home <i class="navIcon fa fa-angle-down"></i></label>
+            <ul class=dropdown>
+              <li><a href="#">Home 1</a></li>
+              <li><a href="#">Home 2</a></li>
+              <li><a href="#">Home 3</a></li>
+            </ul></li>
+          <li><a href="#" class=desktop-link>Schedules <i class="navIcon fa fa-angle-down"></i></a>
+            <input type="checkbox" id="show-schedules">
+            <label for="show-schedules">Schedules <i class="navIcon fa fa-angle-down"></i></label>
+            <ul class=dropdown>
+              <li><a href="#">Schedule carousel</a></li>
+              <li><a href="#">Schedule Lifestyle</a></li>
+              <li><a href="#">Schedule Tabstyle</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class=desktop-link>Speakers <i class="navIcon fa fa-angle-down"></i></a>
+            <input type="checkbox" id="show-speakers">
+            <label for="show-speakers">Speakers <i class="navIcon fa fa-angle-down"></i></label>
+            <ul class=dropdown>
+              <li><a href="#">Speaker 1</a></li>
+              <li><a href="#">Speaker 2</a></li>
+              <li><a href="#">Speaker 3</a></li>
+            </ul>
+          </li>
+         <li> <a href =#>Sponsors</a></li>
+         <li><a href="#" class=desktop-link>Pages <i class="navIcon fa fa-angle-down"></i></a>
+          <input type="checkbox" id="show-Pages">
+          <label for="show-Pages">Pages <i class="navIcon fa fa-angle-down"></i></label>
+          <ul class=dropdown>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Icon</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-      <div class="dropdown" style="float:justify;">
-        <button class="dropbtn">Schedules
-          <i class="fa fa-angle-down" style="color: inherit;"></i>
-        </button>
-        <div class="dropdown-content" style="float:justify;">
-          <a class="dropdown-item" href="#">Schedule carousel 1</a>
-          <a class="dropdown-item" href="#">Schedules liststyle</a>
-          <a class="dropdown-item" href="#">Schedules tabstyle</a>
-        </div>
-      </div>
-      <div class="dropdown" style="float:justify;">
-        <button class="dropbtn">Speakers
-          <i class="fa fa-angle-down" style="color: inherit;"></i>
-        </button>
-        <div class="dropdown-content">
-          <a class="dropdown-item" href="#">Speaker 1</a>
-          <a class="dropdown-item" href="#">Speaker 2</a>
-          <a class="dropdown-item" href="#">Speaker 3</a>
-        </div>
-      </div>
-      <a href="#home">Sponsors</a>
-      <div class="dropdown">
-        <button class="dropbtn">Pages
-          <i class="fa fa-angle-down" style="color: inherit;"></i>
-        </button>
-        <div class="dropdown-content" style="float:justify;">
-          <a class="dropdown-item" href="#">Faq</a>
-          <a class="dropdown-item" href="#">Icon</a>
-          <a class="dropdown-item" href="#">About us</a>
-        </div>
-      </div>
-      <a href="#Blog">Blog</a>
-      <a href="#Contact">Contact</a>
-    </div>
+    </nav>
+    
   </section>
 
   <section class=second>
