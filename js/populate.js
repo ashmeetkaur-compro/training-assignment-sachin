@@ -14,14 +14,15 @@ function speakerDetails() {
 
   }).then((details) => {
     d = details;
-    getData(defaultTab);
+    getData();
+    document.getElementById("defaultOpen").click();
   })
 
 }
 
 
 
-function getData(callback) {
+function getData() {
   console.log("Started getData")
   url = "../assets/index.json";
   fetch(url).then((response) => {
@@ -115,7 +116,7 @@ function getData(callback) {
         if (slot.descreption && slot.descreption !== "") {
           ros6 = `<button class="accordion"><i class="fa fa-plus" style="color:black"> </i></button>
                           <div class="panel">
-                            <p>${slot.descreption}</p>
+                            <p class=mb-0>${slot.descreption}</p>
                           </div>`}
         timeVenue += ros6;
         timeVenue += `</div>
@@ -140,9 +141,11 @@ function getData(callback) {
 
     document.getElementById('tab').innerHTML = str;
     document.getElementById('populate').innerHTML = restOfTabs;
+    document.getElementById("defaultOpen").click();
+    execution();
 
     console.log("completed");
-    callback();
+    // callback();
 
 
 
@@ -164,14 +167,12 @@ function openTab(evt, day) {
   document.getElementById(day).style.display = "block";
   evt.currentTarget.className += " active";
 }
-function defaultTab() {
-  document.getElementById("defaultOpen").click();
-}
+
 
 console.log("executing function");
 
 
-function execution(callback){
+function execution(){
   var acc = document.getElementsByClassName("accordion");
       var i;
 
@@ -186,9 +187,10 @@ function execution(callback){
           }
         });
       }
-      callback();
+      // callback();
   
 
 
 }
-execution(speakerDetails)
+// execution(speakerDetails)
+speakerDetails();

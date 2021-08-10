@@ -475,9 +475,10 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
 }
 
 .panel {
-  padding: 0 18px;
+  margin-top: 10PX;
   display: none;
   overflow: hidden;
+  box-shadow: none;
 }
 
 .accordion {
@@ -862,4 +863,5 @@ nav .content .links{
 .navIcon{
   color:black;
 }
+
 
