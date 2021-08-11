@@ -108,7 +108,7 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
   opacity: 0.8;
   background-image: linear-gradient(to right, #fd8a66 0%, #fd4c72 49%, #fd387c 85%, #fd2384 100%);
   padding: 1.065rem 3.5rem;
-  font-size: 1.75rem;
+  font-size: 1rem;
   line-height: 1.875;
   border-radius: 50px;
   line-height: 30px;
@@ -450,6 +450,7 @@ input[type=text]:focus, input[type=password], input[type=email], select:focus {
 }
 .image{
   height:880px;
+  width: 100%;
 }
 
 .speaker_link{
@@ -626,12 +627,11 @@ span{
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-.wrapper{
-  background: #171c24;
+.Navigationbar{
   position: absolute;
   width: 100%;
 }
-.wrapper nav{
+.Navigationbar nav{
   background-color: white;
     width: 100%;
     display: flex;
@@ -652,11 +652,7 @@ nav .content .links{
   margin-left: 80px;
   display: flex;
 }
-.content .logo a{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-}
+
 .content .links li{
   list-style: none;
   line-height: 70px;
@@ -677,8 +673,8 @@ nav .content .links{
 .content .links li label:hover{
   color: rgb(253, 76, 102);
 }
-.wrapper .search-icon,
-.wrapper .menu-icon{
+.Navigationbar .search-icon,
+.Navigationbar .menu-icon{
   color: #fff;
   font-size: 18px;
   cursor: pointer;
@@ -686,14 +682,14 @@ nav .content .links{
   width: 70px;
   text-align: center;
 }
-.wrapper .menu-icon{
+.Navigationbar .menu-icon{
   display: none;
 }
-.wrapper #show-search:checked ~ .search-icon i::before{
+.Navigationbar #show-search:checked ~ .search-icon i::before{
   content: "\f00d";
 }
 
-.wrapper .search-box{
+.Navigationbar .search-box{
   position: absolute;
   height: 100%;
   max-width: calc(100% - 50px);
@@ -704,7 +700,7 @@ nav .content .links{
 }
 
 
-.wrapper input[type="checkbox"]{
+.Navigationbar input[type="checkbox"]{
   display: none;
 }
 
@@ -743,7 +739,7 @@ nav .content .links{
 
 /* Responsive code start */
 @media screen and (max-width: 1250px){
-  .wrapper nav{
+  .Navigationbar nav{
     max-width: 100%;
     padding: 0 20px;
   }
@@ -753,19 +749,19 @@ nav .content .links{
   .content .links li a{
     padding: 8px 13px;
   }
-  .wrapper .search-box{
+  .Navigationbar .search-box{
     max-width: calc(100% - 100px);
   }
-  .wrapper .search-box input{
+  .Navigationbar .search-box input{
     padding: 0 100px 0 15px;
   }
 }
 
 @media screen and (max-width: 900px){
-  .wrapper .menu-icon{
+  .Navigationbar .menu-icon{
     display: block;
   }
-  .wrapper #show-menu:checked ~ .menu-icon i::before{
+  .Navigationbar #show-menu:checked ~ .menu-icon i::before{
     content: "\f00d";
   }
   nav .content .links{
@@ -828,20 +824,20 @@ nav .content .links{
 }
 
 @media screen and (max-width: 400px){
-  .wrapper nav{
+  .Navigationbar nav{
     padding: 0 10px;
   }
   .content .logo a{
     font-size: 27px;
   }
-  .wrapper .search-box{
+  .Navigationbar .search-box{
     max-width: calc(100% - 70px);
   }
-  .wrapper .search-box .go-icon{
+  .Navigationbar .search-box .go-icon{
     width: 30px;
     right: 0;
   }
-  .wrapper .search-box input{
+  .Navigationbar .search-box input{
     padding-right: 30px;
   }
 }
@@ -862,6 +858,10 @@ nav .content .links{
 }
 .navIcon{
   color:black;
+}
+.Register{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
